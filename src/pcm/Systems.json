@@ -1,0 +1,56 @@
+{"showSearch":true, "showCards":false, "label":"Systems", "context":"pcm:Systems","navContext":"pcm:Systems","data":[
+    {
+        "label": "Direct+",
+        "context":"cpm:DirectPlus",
+        "description": "This contains the primary product systems supplied by D&B",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            }
+        ],
+        "image": "src/media/u30.png",
+        "selected": "false",
+        "properties":[
+            {"label":"Number of Items","values":[{"datatype":"xs:integer","value":"4217"}]},
+            {"label":"Significance","values":[{"datatype":"xs:string","value":"High"}]},
+            {"label":"Last Updated","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    },
+    {
+        "label": "Direct 2.0",
+        "context":"cpm:Direct20",
+        "description": "This contains the Direct 2.0 version data used by D&B, being phased out in favor of Direct+.",
+        "tags": [
+            {
+                "label": "Caution",
+                "color": "var(--tag-caution-status)"
+            }
+        ],
+        "image": "src/media/u30.png",
+        "selected": "false",
+        "properties":[
+            {"label":"Number of Items","values":[{"datatype":"xs:integer","value":"3192"}]},
+            {"label":"Significance","values":[{"datatype":"xs:string","value":"High"}]},
+            {"label":"Last Updated","values":[{"datatype":"xs:date","value":"2015-12-17"}]}
+            ]
+    },
+    {
+        "label": "Direct 1.0",
+        "context":"cpm:Direct10",
+        "description": "This contains the Direct 1.0 version data used by D&B, being phased out in favor of Direct+.",
+        "tags": [
+            {
+                "label": "Deprecated",
+                "color": "var(--tag-inactive-status)"
+            }
+        ],
+        "image": "src/media/u30.png",
+        "selected": "false",
+        "properties":[
+            {"label":"Number of Items","values":[{"datatype":"xs:integer","value":"2716"}]},
+            {"label":"Significance","values":[{"datatype":"xs:string","value":"High"}]},
+            {"label":"Last Updated","values":[{"datatype":"xs:date","value":"2015-12-17"}]}
+            ]
+    }
+]}

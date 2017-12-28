@@ -1,0 +1,79 @@
+{"showSearch":true, "showCards":false, "label":"Universal Elements", "navContext":"pcm:UniversalElements","data":[
+    {
+        "label": "Bank",
+        "context":"cpm:Bank",
+        "description": "A financial institution that provides loans, deposit services and financial planning.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "D2.0",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "https://i.investopedia.com/content/chartadvisor_article/bank_stocks_nearing_/bank_176952073.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"Count in System","values":[{"datatype":"xs:integer","value":42251}]},
+            {"label":"Significance","values":[{"datatype":"xs:string","value":"High"}]},
+            {"label":"In Product","values":[{"value":"pcm:DirectPlus","label":"Direct+"},{"value":"pcm:Direct2_0","label":"Direct 2.0"}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    },
+    {
+        "label": "Bank Account",
+        "context":"cpm:BankAccount",
+        "description": "A specific account within a bank for an individual or organization.",
+        "tags": [
+            {
+                "label": "Inactive",
+                "color": "var(--tag-inactive-status)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "D1.0",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "http://www.abcschool.co.uk/blog/wp-content/uploads/2017/04/bank-account-1024x683.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"Count in System","values":[{"datatype":"xs:integer","value":42251}]},
+            {"label":"Significance","values":[{"datatype":"xs:string","value":"High"}]},
+            {"label":"In Product","values":[{"value":"pcm:DirectPlus","label":"Direct+"},{"value":"pcm:Direct1_0","label":"Direct 1.0"}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-25"}]}
+            ]
+    },
+    {
+        "label": "Bank Audit",
+        "context":"cpm:BankAudit",
+        "description": "A review of the accounts that a bank has, typically for regulatory purposes.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "http://ombirpanwar.com/wp-content/uploads/2014/02/audit1-960x320_c.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"Count in System","values":[{"datatype":"xs:integer","value":377262}]},
+            {"label":"Significance","values":[{"datatype":"xs:string","value":"Medium"}]},
+            {"label":"In Product","values":[{"value":"pcm:DirectPlus","label":"Direct+"}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-22"}]}
+            ]
+    }
+]}

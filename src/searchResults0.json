@@ -1,0 +1,30 @@
+{"showSearch":false, "showCards":true, "data":[
+    {
+        "label": "Systems",
+        "context":"cpm:Systems",
+        "description": "The various systems of information that are available",
+        "tags": [],
+        "image": "src/media/u33.png",
+        "selected": "false",
+        "properties":[]
+    },
+    {
+        "label": "Universal Elements",
+        "context":"cpm:UniversalElements",
+        "description": "Primary product data terms.",
+        "tags": [],
+        "image": "src/media/u30.png",
+        "selected": "false",
+        "properties":[]
+    },
+    {
+        "label": "Reference Data",
+        "context":"cpm:Reference Data",
+        "description": "The various controlled vocabularies and Scots Tables available for reference.",
+        "tags": [],
+        "image": "src/media/u30.png",
+        "selected": "false",
+        "properties":[
+        ]
+    }
+]}

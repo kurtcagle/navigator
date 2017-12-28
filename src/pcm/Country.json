@@ -1,0 +1,83 @@
+{"showSearch":true, "showCards":false, "label":"Countries", "context":"pcm:Country","navContext":"pcm:ReferenceData","data":[
+    {
+        "label": "United States of America",
+        "context":"cpm:US",
+        "description": "Country in the central part of North America, also known as USA.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "D2.0",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "https://i.investopedia.com/content/chartadvisor_article/bank_stocks_nearing_/bank_176952073.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"IsoCode2","values":[{"datatype":"xs:string","value":"US"}]},
+            {"label":"IsoCode3","values":[{"datatype":"xs:string","value":"USA"}]},
+            {"label":"Continent","values":[{"value":"pcm:NorthAmerica","label":"North America"}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    },
+   {
+        "label": "Canada",
+        "context":"cpm:CA",
+        "description": "Country in the northern part of North America.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "D2.0",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "https://i.investopedia.com/content/chartadvisor_article/bank_stocks_nearing_/bank_176952073.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"IsoCode2","values":[{"datatype":"xs:string","value":"CA"}]},
+            {"label":"IsoCode3","values":[{"datatype":"xs:string","value":"CAN"}]},
+            {"label":"Continent","values":[{"value":"pcm:NorthAmerica","label":"North America"}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2016-12-03"}]}
+            ]
+    },
+   {
+        "label": "Mexico",
+        "context":"cpm:MX",
+        "description": "Country in the southern part of North America.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "D2.0",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "https://i.investopedia.com/content/chartadvisor_article/bank_stocks_nearing_/bank_176952073.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"IsoCode2","values":[{"datatype":"xs:string","value":"MX"}]},
+            {"label":"IsoCode3","values":[{"datatype":"xs:string","value":"MEX"}]},
+            {"label":"Continent","values":[{"value":"pcm:NorthAmerica","label":"North America"}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2016-12-03"}]}
+            ]
+    }
+]}

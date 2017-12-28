@@ -1,0 +1,52 @@
+{"showSearch":true, "showCards":false, "label":"Reference Data", "navContext":"pcm:ReferenceData","data":[
+    {
+        "label": "Countries",
+        "context":"cpm:Country",
+        "description": "Political Entities that generally correspond to nationalist boundaries.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "D2.0",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "https://i.investopedia.com/content/chartadvisor_article/bank_stocks_nearing_/bank_176952073.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"Count in System","values":[{"datatype":"xs:integer","value":212}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    },
+    {
+        "label": "Business Types",
+        "context":"cpm:BusinessTypes",
+        "description": "Different forms of incorporation",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "D2.0",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "https://i.investopedia.com/content/chartadvisor_article/bank_stocks_nearing_/bank_176952073.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"Count in System","values":[{"datatype":"xs:integer","value":212}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    }
+]}

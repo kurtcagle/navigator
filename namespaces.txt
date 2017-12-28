@@ -1,0 +1,14 @@
+prefix err:	<http://www.w3.org/2005/xqt-errors#>
+prefix fn:	<http://www.w3.org/2005/xpath-functions#>
+prefix gist:	<http://ontologies.semanticarts.com/gist#>
+prefix keyword:	<http://franz.com/ns/keyword#>
+prefix nd:	<http://franz.com/ns/allegrograph/5.0/geo/nd#>
+prefix ndfn:	<http://franz.com/ns/allegrograph/5.0/geo/nd/fn#>
+prefix dnb:	<http://services.dnb.com/PCMDataServiceV2.0/>
+prefix pcm:	<http://services.dnb.com/PCMDataServiceV2.0/>
+prefix scots:	<http://referencedata.dnb.com/scots#>
+prefix sh:	<http://www.w3.org/ns/shacl#>
+prefix shape:	<http://metada.dnb.com/ns/shape#>
+prefix shsa:	<http://semanticarts.com/ns/shacl/ext/>
+prefix xs:	<http://www.w3.org/2001/XMLSchema#>
+prefix xsd:	<http://www.w3.org/2001/XMLSchema#>

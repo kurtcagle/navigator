@@ -1,0 +1,50 @@
+{"showSearch":true, "showCards":false, "label":"Glossary", "context":"pcm:Glossary","navContext":"pcm:Glossary","data":[
+    {
+        "label": "Product",
+        "context":"cpm:Product",
+        "description": "This is a high level domain that represents collections of terms and their associated data",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            }
+        ],
+        "image": "",
+        "selected": "false",
+        "properties":[
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    },
+    {
+        "label": "Layer",
+        "context":"cpm:Layer",
+        "description": "An aggregate of items within a given product.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            }
+        ],
+        "image": "",
+        "selected": "false",
+        "properties":[
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    },
+    {
+        "label": "D&B",
+        "context":"cpm:DnB",
+        "description": "A shortened form of Dun and Bradstreet.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            }
+        ],
+        "image": "",
+        "selected": "false",
+        "properties":[
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    }
+]}

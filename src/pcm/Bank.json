@@ -1,0 +1,29 @@
+{"showSearch":true, "showCards":false, "label":"Bank","context":"pcm:Bank", "navContext":"pcm:Systems","data":[
+    {
+        "label": "Bank",
+        "context":"cpm:Bank",
+        "description": "A financial institution that provides loans, deposit services and financial planning.",
+        "tags": [
+            {
+                "label": "Active",
+                "color": "var(--tag-active-status)"
+            },
+            {
+                "label": "D2.0",
+                "color": "var(--tag-product)"
+            },
+            {
+                "label": "Direct+",
+                "color": "var(--tag-product)"
+            }
+        ],
+        "image": "https://i.investopedia.com/content/chartadvisor_article/bank_stocks_nearing_/bank_176952073.jpg",
+        "selected": "false",
+        "properties":[
+            {"label":"Count in System","values":[{"datatype":"xs:integer","value":42251}]},
+            {"label":"Significance","values":[{"datatype":"xs:string","value":"High"}]},
+            {"label":"In Product","values":[{"value":"pcm:DirectPlus","label":"Direct+"},{"value":"pcm:Direct2_0","label":"Direct 2.0"}]},
+            {"label":"Date","values":[{"datatype":"xs:date","value":"2017-11-29"}]}
+            ]
+    }
+]}

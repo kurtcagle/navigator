@@ -1,0 +1,10 @@
+<template>
+    <div repeat.for="searchItem of searchItems" if.bind="showSearch">
+        <div class="searchItem ">
+            <div class="searchItemLabel ${searchItem.selected == 'true' ? 'selected':''}" click.trigger="selectItem(searchItem)">${searchItem.title}</div>
+            <div class="searchItemDesc">${searchItem.description}</div>
+            <div class="searchItemButtons  ${searchItem.selected == 'true' ? 'selected':''}"><button type="button" click.trigger="removeListing(searchItem)" >x</button></div>
+            <div class="searchTags"><span  repeat.for="tag of searchItem.tags" class="searchTag" css="background-color:${tag.color}">${tag.term}</span></div>
+        </div>
+    </div>
+</template>

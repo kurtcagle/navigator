@@ -1,0 +1,18 @@
+{
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "pcm": "http://services.dnb.com/PCMDataServiceV2.0/",
+        "sh": "http://www.w3.org/ns/shacl#",
+        "shsa":"http://semanticarts.com/ns/shacl/ext/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xs": "http://www.w3.org/2001/XMLSchema#",
+        "shape": "http://metada.dnb.com/ns/shape#",
+        "dnb": "http://ontologies.dnb.com/dnb#",
+        "xml": "http://www.w3.org/XML/1998/namespace",
+        "gist": "http://ontologies.semanticarts.com/gist#",
+        "scots": "http://referencedata.dnb.com/scots#",
+        "graph": "http://ontologies.semanticarts.com/graph#",
+        "meta": "http://meta.dnb.com/meta/",
+        "data": "http://data.dnb.com/layers/data/"
+}

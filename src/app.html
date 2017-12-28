@@ -1,0 +1,97 @@
+import {SearchItems} from "./searchItems"
+
+<template>
+  <require from="./app.css"></require>
+  <require from="./searchItems"></require>
+  <div id="base">
+    <div class="universalBar">
+      <div class="barGroup">
+        <div class="barItem  ${btn.selected?'selected':''}" repeat.for="btn of navButtons" click.trigger="selectButton(navButtons,btn)">
+          <img class="image" if.bind="btn.image" src="${btn.image}"/>
+          <span class="label" if.bind="btn.label">${btn.label}</span>
+        </div>
+      </div>
+      <div class="barGroup">
+        THING
+      </div>
+    </div>
+  </div>
+  <div class="displayBlock">
+    <div class="searchPane">
+      <h2>Search</h2>
+      <input placeholder="Enter search term" id="q" input.delegate="search()" value.bind="q"></input>
+      <div>${count} item${count != 1?"s":""} found.</div>
+      <button click.trigger="getTableCount()">Count</button>
+    </div>  
+    <div class="mainPane">  
+    <img src.bind="image" class="mainImage" if.bind="image"/>
+    <div class="breadcrumbs">
+      <span class="breadcrumb" repeat.for="breadcrumb of breadcrumbs(searchItems[0].props.path)">
+         <span class="breadCrumbLink"  click.trigger="activateLink(breadcrumb.link)"> ${breadcrumb.term} </span> <span if.bind="!$first">&#8658;</span> 
+      </span>
+    </div>  
+    <h1>${heading}</h1>
+
+    <div repeat.for="searchItem of searchItems" if.bind="showSearch">
+      <div class="searchItem ">
+        <div class="searchItemLabel ${searchItem.props.context === 'meta:Context' ? 'selected':''}" click.trigger="selectItem(searchItem)">${stripQuotes(searchItem.props.name)}</div>
+        <div class="searchItemCount ${searchItem.props.context === 'meta:Context' ? 'selected':''}" click.trigger="displayHeatMaps(searchItem,getDataMemberCount())"
+        title="Click here for count breakdown.">${getDataMemberCount()}</div>
+        <div class="searchItemType ${searchItem.props.context === 'meta:Context' ? 'selected':''}" >${searchItem.props.type.split(":")[1]}</div>
+        <div class="searchItemDesc">${stripQuotes(searchItem.props.desc)}</div>
+        <div class="searchTags"><span  repeat.for="tag of searchItem.tags" class="searchTag" css="background-color:${tag.color}">${tag.label}</span></div>
+        <div class="searchProps">
+         <div class="searchProp" repeat.for="prop of keyIterate(searchItem.props,['name','type','desc','path','context','linkedBy','alsoKnownAs'])">
+            <div class="label">${prop}</div>
+            <div class="values"><span class="entry" repeat.for="entry of metaOnly(enArray(searchItem.props[prop]))">
+              <span class="link" click.trigger="activateLink(entry)" bind:if="isCurie(entry)">${entry}</span><span if.bind="!$last" css="white-space:pre">,&#160;</span>
+            </span></div>
+          </div>
+
+        </div>
+        <div class="searchItemNotes">
+           <details>
+              <summary>Notes</summary>
+              <div>This is placeholder notes for '${searchItem.props.name}'. This would include basic provenance information, as well as who is the curator and any additional data.</div>
+           </details>
+        </div>
+      </div>
+    </div>
+   
+    <div if.bind="showCards" class="cards">
+      <div class="card  ${card.selected == 'true' ? 'selected':''}"" repeat.for="card of searchItems"  mousedown.trigger="selectItem(card)" >
+        <div class="cardImageBox  ${card.selected == 'true' ? 'selected':''}">
+          <img src="${card.image}" class="cardImage"/>
+        </div>  
+        <div class="cardLabel">${card.label}</div>
+        <div class="searchTags"><span  repeat.for="tag of card.tags" class="searchTag" css="background-color:${tag.color}">${tag.label}</span></div>
+      </div>
+    </div>
+
+    <div if.bind="layout==='table'" class="dataSet"> 
+      <table  class="dataTable">
+        <thead>
+          <tr>
+              <th repeat.for="name of dataTable.names">${name}</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr repeat.for="valueSet of dataTable.values">
+              <td repeat.for="value of valueSet">${datatype(value)}</td>
+           </tr>  
+        </tbody>
+      </table>
+    </div>  
+    </div>  
+  </div>
+  <dialog id="heatMapDialog">
+    <h1 class="">Count by Country</h1>
+    <p class="heatMapMessage"></p>
+    <div id="heatMapComponent">
+      <div class="mapid">This is the heat map.</div>
+    </div>
+    <div class="dialogButtons">
+      <button click.trigger="closeHeatMaps(searchItem)">Close</button>
+    </div>
+  </dialog>
+</template>
